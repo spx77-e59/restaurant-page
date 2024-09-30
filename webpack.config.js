@@ -13,7 +13,7 @@ module.exports = {
   devServer: {
     watchFiles: ["./src/template.html"],
   },
-  Plugins: [
+  plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
     }),
@@ -37,7 +37,6 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
       },
-      I,
     ],
   },
 };
