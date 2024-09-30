@@ -24,7 +24,7 @@ Located in the heart of Foodie Town, The Golden Spoon has quickly become a belov
 
   const team = [
     {
-      name: "Chef Sonam:",
+      name: "Chef Sonam",
       description: `With over 15 years of experience in Michelin-starred kitchens, Chef Marco brings his expertise and creativity to The Golden Spoon. His passion for seasonal ingredients and innovative techniques is evident in every dish.`,
     },
     {
@@ -47,6 +47,9 @@ Located in the heart of Foodie Town, The Golden Spoon has quickly become a belov
     teamDiv.append(name, description);
   });
 
+  teamDiv.classList.add("team");
+
+  aboutDiv.classList.add("about");
   aboutDiv.append(storyDiv, missionDiv, teamDiv);
 
   return aboutDiv;

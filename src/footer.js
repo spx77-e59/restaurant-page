@@ -23,9 +23,10 @@ Foodie Town, FL 54321`,
 
     contactInfoDiv.append(value);
   });
+  contactInfoDiv.classList.add("contact-info");
 
   copyRightText.textContent = "© 2024 The Golden Spoon. All Rights Reserved.";
-
+  copyRightText.classList.add("copyright");
   footerDiv.append(contactInfoDiv, copyRightText);
 
   return footerDiv;

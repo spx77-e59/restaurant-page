@@ -31,9 +31,18 @@ function displayContent(sectionName) {
   }
 }
 
+const homeButton = navElement.querySelector("button");
+homeButton.classList.add("active-state");
+
+
 navElement.addEventListener("click", (e) => {
   const target = e.target;
   if (target.tagName === "BUTTON") {
     displayContent(target.innerText);
+    const buttons = navElement.querySelectorAll("button");
+    buttons.forEach((button) => {
+      button.classList.remove("active-state");
+    });
+    target.classList.add("active-state");
   }
 });
